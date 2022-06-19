@@ -13,6 +13,7 @@ use pocketmine\utils\Config;
 use pocketmine\utils\TextFormat;
 
 class Main extends PluginBase implements Listener {
+    public $pwarp;
 
     public function onEnable(): void
     {
