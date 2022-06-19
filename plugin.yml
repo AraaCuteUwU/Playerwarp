@@ -1,0 +1,15 @@
+name: Playerwarp
+version: 1.0.0
+main: FiraAja\Playerwarp\Main
+api: 4.0.0
+author: FiraAja
+
+commands:
+ playerwarp:
+  description: "Playerwarp Command"
+  aliases: ["pwarp"]
+  permission: playerwarp.cmd
+  
+permissions:
+ playerwarp.cmd:
+  default: true
