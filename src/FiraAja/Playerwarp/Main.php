@@ -144,6 +144,7 @@ class Main extends PluginBase implements Listener {
                     return true;
             }
         }
+        return true;
     }
 
     public function getHelp(Player $player) {
