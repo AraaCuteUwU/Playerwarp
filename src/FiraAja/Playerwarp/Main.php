@@ -90,11 +90,11 @@ class Main extends PluginBase implements Listener {
                     $this->getHelp($sender);
                     return true;
                 case "info":
-                    $pwarpname = $args[1];
                     if(!isset($args[1])){
                         $sender->sendMessage("§cWRONG USAGE: §fRun /pwarp help to get help about playerwarp.");
                         return true;
                     }
+                    $pwarpname = $args[1];
                     if(!$this->pwarp->exists($pwarpname)) {
                         $sender->sendMessage("§cERROR: §fThere is no playerwarp with the name: §b" . $pwarpname . "§f!");
                         return true;
@@ -112,11 +112,11 @@ class Main extends PluginBase implements Listener {
                     return true;
                 case "teleport":
                 case "tp":
-                    $pwarpname = $args[1];
                     if(!isset($args[1])){
                         $sender->sendMessage("§cWRONG USAGE: §fRun /pwarp help to get help about playerwarp.");
                         return true;
                     }
+                    $pwarpname = $args[1];
                     if(!$this->pwarp->exists($pwarpname)) {
                         $sender->sendMessage("§cERROR: §fThere is no pwarp with the name " . $pwarpname . "!");
                         return true;
