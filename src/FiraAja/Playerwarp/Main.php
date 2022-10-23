@@ -91,7 +91,7 @@ class Main extends PluginBase implements Listener {
                     return true;
                 case "info":
                     $pwarpname = $args[1];
-                    if(!isset($pwarpname)){
+                    if(!isset($args[1])){
                         $sender->sendMessage("§cWRONG USAGE: §fRun /pwarp help to get help about playerwarp.");
                         return true;
                     }
@@ -113,7 +113,7 @@ class Main extends PluginBase implements Listener {
                 case "teleport":
                 case "tp":
                     $pwarpname = $args[1];
-                    if(!isset($pwarpname)){
+                    if(!isset($args[1])){
                         $sender->sendMessage("§cWRONG USAGE: §fRun /pwarp help to get help about playerwarp.");
                         return true;
                     }
